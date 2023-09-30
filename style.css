@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root{
+    --cor-primaria:#000000;
+    --cor-secundaria:#f6f6f6; 
+    --cor-terciaria: #22D4FD;
+    --cor-hover: #272727;
+
+    --font-principal:'Krona One', sans-serif;
+    --font-secundaria:'Montserrat', sans-serif;
+}
+
+.headerrr{
+    padding: 2% 0% 0% 10%; 
+}
+
+.menu{
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalink{
+    color: var(--cor-terciaria);
+    font-family: var(--font-principal);
+    text-decoration: none;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.titulo-destaque{
+    color: var(--cor-terciaria);
+}
+
+.app{
+    margin: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.app__conteudo{
+    display: flex;
+    width:50%;
+    height: 50%;
+    flex-direction: column;
+    
+}
+
+.tamanho{
+font-size: 2rem;
+font-family: var(--font-principal);
+padding-bottom: 30px;
+}
+
+.escrito{
+    font-size: 1.5rem;
+    font-family: var(--font-secundaria);
+    padding-bottom: 40px;
+}
+
+.agrupar{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.im{
+    width: 50%;
+    padding-left: 10%;
+}
+
+.aft{
+    
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    border: 2px solid var(--cor-terciaria);
+    width: 100%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-family: var(--font-secundaria);
+    font-weight: 600;
+    padding: 20px 0;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+   
+    
+    
+}
+
+.aft:hover{
+    background-color: var(--cor-hover);
+}
+
+.tituloh2{
+    font-size: 1,5rem;
+    font-family: var(--font-principal);
+    font-weight: 400;
+}
+
+.vai{
+    text-align: center;
+    color: var(--cor-primaria);
+    font-family: var(--font-secundaria);
+    background-color: var(--cor-terciaria);
+    margin-top: 10%;
+    padding: 24px;
+    font-weight: 400;
+}
+
+
+@media (max-width:1200px) {
+    .app{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .headerrr{
+        padding: 10% 0% 0% 0%;
+    }
+    .menu{
+        justify-content: center;
+    }
+    .tamanho{
+        padding-bottom: 10%; 
+    }
+    .im{
+        padding-bottom: 10%;
+        width: 9    0%;
+    }
+    .app__conteudo{
+        width: auto;
+    }
+}
